@@ -1,0 +1,48 @@
+@import 'utils/vars';
+@import 'utils/templates';
+@import 'utils/base';
+
+@import 'components/container';
+@import 'components/primary-btn';
+@import 'components/social__list';
+
+@import 'layout/header';
+@import 'components/header__mobile-menu';
+@import 'components/mobile_menu-btn--close';
+@import 'components/mobile_soc-list';
+@import 'components/mobile_menu-btn';
+@import 'components/header__logo';
+@import 'components/header__nav-list';
+@import 'components/header__contacts';
+
+
+@import 'layout/effective';
+@import 'components/effective__title';
+
+@import 'layout/benefits';
+@import 'components/benefits__card';
+
+@import 'layout/performance';
+@import 'components/performance__card';
+
+@import 'layout/team';
+@import 'components/team__card';
+@import 'components/social__link--team';
+
+@import 'layout/clients';
+@import 'components/client__link';
+
+@import 'layout/footer';
+@import 'components/footer__logo';
+@import 'components/footer__address';
+@import 'components/social__link--footer';
+@import 'components/footer__form';
+@import 'components/primary-btn--logos';
+
+@import 'layout/portfolio';
+@import 'components/portfolio__filter-buttons';
+@import 'components/portfolio__card-link';
+
+@import 'layout/modal';
+@import 'components/modal__close-btn';
+@import 'components/modal__form';

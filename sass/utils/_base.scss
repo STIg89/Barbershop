@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--primaryColor);
+    background: var(--bgW);
+
+    &.modal-open {
+        @media screen and (max-width: 767px) {
+            overflow: hidden;
+        }
+    }
+}
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+.benefits,
+.performance,
+.team,
+.clients,
+.card {
+    padding: 60px 0 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0 94px 0;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+    color: inherit;
+    transition: color var(--duration) var(--cubic);
+}
+
+.icon {
+    transition: color var(--duration) var(--cubic);
+}
+
+.link:hover,
+.link:focus,
+.btn:hover,
+.btn:focus,
+.icon:hover,
+.icon:focus {
+    color: var(--accentColor);
+}
+
+
