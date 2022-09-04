@@ -1,0 +1,47 @@
+.hero {
+    max-width: 480px;
+    
+    background: var(--bgG);
+    margin: 0 auto;
+}.container {
+}
+.hero__soc {
+    @include mobile {
+        display: none;
+    }
+}
+.hero__soc-list {
+}
+.soc-list {
+}
+.list {
+}
+.hero__soc-item {
+}
+.hero__soc-link {
+}
+.link {
+}
+.hero__content {
+    @include flex (none, center);
+    flex-direction: column;
+    height: 580px;
+    max-width: 336px;
+}
+.hero__pre-title {
+    margin-bottom: var(--textGap);
+}
+
+.pre-title--color-light {
+}
+.hero__title {
+    @include font (700, 48, 56, 0.05);
+    color: var(--secondaryTitle);
+    margin-bottom: var(--textGap)
+}
+.hero__after-title {
+    @include font (400, 16, 26, 0.02);
+    color: var(--secondaryText);
+}
+.after-title {
+}

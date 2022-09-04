@@ -1,0 +1,25 @@
+.gallery {
+}
+.section {
+}
+.container {
+}
+.gallery__pre-title {
+}
+.pre-title {
+    margin-bottom: 71px;
+}
+.visually-hidden {
+    @include visibilityHidden;
+}
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--cardGap);
+}
+.list {
+}
+.gallery__item {
+}
+.gallery__card-img {
+}

@@ -1,0 +1,70 @@
+.benefits {
+}
+.section {
+}
+.container {
+}
+.benefits__content {
+}
+.benefits__pre-title {
+}
+.pre-title {
+}
+.benefits__title {
+    @include font (700, 42, 49, 0.05);
+    color: var(--primaryElem);
+    margin-bottom: var(--textGap)
+}
+.title {
+}
+.benefits__after-title {
+    @include font (400, 18, 30, 0.02);
+    margin-bottom: var(--componentGap);
+    color: var(--primaryText);
+}
+.after-title {
+}
+.benefits__cards {
+}
+.benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list {
+}
+.benefits__item {
+    @include flex;
+    flex-direction: column;
+    width: calc((100% - var(--cardGap))/2);
+    height: 133px;
+    background-color: var(--bgLG);
+    padding: 20px 35px;
+
+    &:nth-child(even) {
+        margin-top: var(--cardGap);
+    }
+    
+    &:nth-child(odd) {
+        margin-right: var(--cardGap);
+    }
+}
+
+    .benefits__item-top {
+    display: flex;
+    span {
+        @include font (700, 42, 57, 0.05);
+        color: var(--primaryElem);
+        }
+
+    sup {
+        @include font (600, 16, 22, 0.05);
+        color: var(--accentColor);
+        max-width: 12px;
+        margin: 15px 0 0 3px;
+    }
+}
+.benefits__item-text {
+    @include font (600, 11, 15, 0);
+    color: var(--primaryElem);
+    text-align: center;
+}

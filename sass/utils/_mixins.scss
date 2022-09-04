@@ -4,7 +4,20 @@
     justify-content: $jc;
 }
 
-%visibilityHidden {
+@mixin mobile {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin font ($fw:400, $fs:14, $lh:26, $ls:0.02) {
+    font-weight: $fw;
+    font-size: $fs+px;
+    line-height: $lh/$fs;
+    letter-spacing: $ls+em;
+}
+
+@mixin visibilityHidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;

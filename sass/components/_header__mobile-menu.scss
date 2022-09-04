@@ -1,0 +1,57 @@
+.header__mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 337px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgLG);
+
+    &--is-hidden {
+        transform: translateX(100%);
+        display: none;
+    }
+}
+.header__nav {
+}
+.mobile_menu-btn--close {
+    position: absolute;
+    top: 48px;
+    right: 31px;
+    border: none;
+    background: transparent;
+}
+.btn {
+}
+.mobile_menu-icon {
+}
+.icon {
+}
+.icon-closeMobile {
+}
+.header__nav-list {
+}
+.list {
+}
+.nav-item {
+}
+.nav-list__link {
+}
+.link {
+}
+.nav-list__link--current {
+}
+.header__contacts {
+}
+.contacts__tel {
+}
+.primary-btn {
+}
+.mobile_soc-list {
+}
+.soc-list {
+}
+.mobile_soc-item {
+}
+.mobile__soc-link {
+}

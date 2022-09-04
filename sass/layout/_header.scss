@@ -1,0 +1,33 @@
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px 0;
+    width: 100%;
+}
+.header__container {
+    position: relative;
+    @include flex(center, space-between);
+}
+.container {
+}
+.header__logo {
+    
+}
+.link {
+}
+.logo {
+    fill: var(--secondaryTitle);
+}
+.mobile_menu-btn {
+    border: none;
+    background: transparent;
+}
+.btn {
+}
+.mobile_menu-icon {
+}
+.icon {
+}
+.icon-burger {
+}

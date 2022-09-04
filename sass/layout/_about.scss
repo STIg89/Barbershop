@@ -1,0 +1,47 @@
+.about {
+}
+.section {
+}
+.container {
+}
+.pic-list {
+    @include mobile {
+        display: none;
+    }
+}
+.list {
+}
+.pic-item {
+}
+.about__content {
+}
+.about__pre-title {
+}
+.pre-title {
+}
+.pre-title--color-dark {
+}
+.about__title {
+    @include font (700, 28, 33, 0.05);
+    color: var(--primaryElem);
+    max-width: 306px;
+}
+.title {
+}
+.about__after-title {
+    margin-bottom: var(--textGap);
+    @include font;
+    font-size: 16px;
+    color: var(--primaryText);
+}
+.after-title {
+}
+.about__text {
+    @include font;
+    color: var(--primaryText);
+    margin-bottom: calc(var(--textGap)*2);
+}
+.primary-btn {
+}
+.btn {
+}

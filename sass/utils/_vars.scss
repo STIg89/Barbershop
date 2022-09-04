@@ -1,13 +1,19 @@
 :root {
-    --primaryColor: #212121;
-    --secondaryColor: #757575;
-    --accentColor: #2196F3;
+    --primaryTitle: #212121;
+    --secondaryTitle: #FFFFFF;
+    --primaryText: #555555;
+    --secondaryText: #9DA4BD;
+    --primaryElem: #303030;
+    --accentColor: #FF6C00;
     --bgW: #FFFFFF;
-    --bgG: #2F303A;
-    --bgLG: #F5F4FA;
+    --bgG: #191C26;
+    --bgLG: #F7F7F7;
+    --serviceBG: #111319;
     --logoBlack: #000000;
     --iconG: #AFB1B8;
     --cardGap: 30px;
+    --textGap: 20px;
+    --componentGap: 44px;
     --cubic: cubic-bezier(0.4, 0, 0.2, 1);
     --duration: 250ms
 }

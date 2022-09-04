@@ -1,0 +1,63 @@
+.services {
+    background: url(/img/servBGT.png), var(--serviceBG);
+    max-width: 480px;
+}
+.section {
+}
+.container {
+}
+.services__pre-title {
+}
+.pre-title {
+}
+.pre-title--color-light {
+}
+.services__title {
+    @include font (700, 40, 47, 0.05);
+    color: var(--secondaryTitle);
+    margin-bottom: var(--componentGap);
+}
+.title {
+    
+}
+
+.services__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--textGap);
+    margin-bottom: var(--componentGap);
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    padding: 30px 20px 30px 40px;
+}
+.services__table {
+}
+.services__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--textGap);
+}
+
+.services__item {
+    display: flex;
+    align-items: baseline;
+}
+
+.services__line {
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin: 0 4px 0 4px;
+}
+.services__text,
+.price__text {
+    @include font;
+    line-height: 1.43;
+    color: var(--secondaryText);
+}
+
+.price__item {
+    
+}
+.services__primary-btn {
+    margin: 0 auto;
+}

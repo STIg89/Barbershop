@@ -1,0 +1,26 @@
+.primary-btn {
+    @include font (600, 12, 16, 0.09);
+    text-transform: uppercase;
+    border-color: var(--accentColor);
+    border-radius: 25px;
+    min-width: 160px;
+    background-color: transparent;
+    padding: 12px;
+    @include flex;
+}
+
+.primary-btn--light {
+    color: var(--secondaryTitle);
+}
+
+.primary-btn--dark {
+    color: var(--primaryElem);
+}
+
+.primary-btn--header {
+    @include mobile {
+        color: var(--primaryElem);
+    }
+    
+    color: var(--secondaryTitle);
+}

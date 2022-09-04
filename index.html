@@ -1,568 +1,536 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Головна сторинка Веб-студио">
+    <meta name="description" content="Barber Shop">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="./css/main.min.css">
     <title>BarberShop</title>
 </head>
 <body>
     <header class="header">
         <div class="header__container container">
-            <a class="header__logo link" href="./index.html"><span>Web</span>Studio</a>
-            <button type="button" class="mobile_menu-btn btn" data-menu-open aria-label="відкрити меню">
-            <svg class="mobile_menu-icon icon" width="40" height="40" aria-label="Мобільне меню">
-                <use class="icon-burger" href="./img/icons.svg#icon-burger"></use>
-            </svg>
+            <a class="header__logo link" href="./index.html">
+                <svg class="logo" width="69" height="55">
+                    <use href="./img/icons.svg#icon-Logo"></use>
+                </svg>
+            </a>
+            <button type="button" class="mobile_menu-btn btn" data-menu-open aria-label="open menu">
+            <svg class="mobile_menu-icon icon" width="40" height="40">
+                <use class="icon-burger" href="./img/icons.svg#icon-menu"></use>
+            </svg>         
             </button>
             <div class="header__menu header__mobile-menu header__mobile-menu--is-hidden" data-menu>
                 <nav class="header__nav">
-                    <button type="button" class="mobile_menu-btn--close btn" data-menu-close aria-label="закрити меню">
+                    <button type="button" class="mobile_menu-btn--close btn" data-menu-close aria-label="close menu">
                         <svg class="mobile_menu-icon icon" width="40" height="40">
-                            <use class="icon-closeMobile" href="./img/icons.svg#icon-closeMobile"></use>
+                            <use class="icon-closeMobile" href="./img/icons.svg#icon-close"></use>
                         </svg>
                     </button>
                     <ul class="header__nav-list list">
-                        <li class="nav-list__item">
-                            <a class="nav-list__link link nav-list__link--current" href="./index.html">Студія</a>
+                        <li class="nav-item">
+                            <a class="nav-list__link link nav-list__link--current" href="#about">About</a>
                         </li>
-                        <li class="nav-list__item">
-                            <a class="nav-list__link link" href="./portfolio.html">Портфоліо</a>
+                        <li class="nav-item">
+                            <a class="nav-list__link link" href="#service">Services and prices</a>
                         </li>
-                        <li class="nav-list__item">
-                            <a class="nav-list__link link" href="#contacts">Контакти</a>
+                        <li class="nav-item">
+                            <a class="nav-list__link link" href="#barbers">Barbers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-list__link link" href="#contacts">Contacts</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="header__contacts list">
-                    <li class="contacts__item">
-                        <a href="mailto:info@devstudio.com" class="contacts__mail link">
-                            <svg class="mail__icon icon" width="16" height="12">
-                                <use href="./img/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="tel:+380961111111" class="contacts__tel link">
-                            <svg class="tel__icon icon" width="10" height="16">
-                                <use href="./img/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-                <ul class="mobile_soc-list list">
+                <div class="header__contacts">
+                    <a href="tel:+380441111111" class="contacts__tel link">+38 044 111 11 11</a>
+                    <button data-modal-open type="button" class="primary-btn primary-btn--header btn">online-booking</button>
+                </div>
+                <ul class="mobile_soc-list soc-list list">
                     <li class="mobile_soc-item">
-                        <a class="mobile_soc-link link" href="https://www.instagram.com">Instagram</a>
+                        <a class="mobile__soc-link link" href="https://www.instagram.com">Instagram</a>
                     </li>
                     <li class="mobile_soc-item">
-                        <a class="mobile_soc-link link" href="https://twitter.com">Twitter</a>
-                    </li>
-                    <li class="mobile_soc-item">
-                        <a class="mobile_soc-link link" href="https://facebook.com">Facebook</a>
-                    </li>
-                    <li class="mobile_soc-item">
-                        <a class="mobile_soc-link link" href="https://linkedin.com">LinkedIn</a>
+                        <a class="mobile__soc-link link" href="https://www.youtube.com/">Youtube</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
-        <section class="effective">
-            <div class="effective__container container">
-                    <h1 class="effective__title title">Ефективні рішення для вашого бізнесу</h1>
-                    <button data-modal-open type="button" class="primary-btn btn">Замовити послугу</button>
-            </div>
-        </section>
-        <section class="benefits">
-            <div class="benefits__container container">
-                <h2 class="benefits__title title">Наші переваги</h2>
-                <ul class="benefits__card-list list">
-                    <li class="benefits__card">
-                        <div class="benefits__thumb">
-                            <svg class="benefits__icon" width="70" height="70">
-                                <use href="./img/icons.svg#icon-antenna"></use>
-                            </svg>
-                        </div>
-                        <h3 class="benefits__sub-title">Увага до деталей</h3>
-                        <p class="benefits__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                    </li>
-                    <li class="benefits__card">
-                        <div class="benefits__thumb">
-                            <svg class="benefits__icon" width="70" height="70">
-                                <use href="./img/icons.svg#icon-clock"></use>
-                            </svg>
-                        </div>
-                        <h3 class="benefits__sub-title">Пунктуальність</h3>
-                        <p class="benefits__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                    </li>
-                    <li class="benefits__card">
-                        <div class="benefits__thumb">
-                            <svg class="benefits__icon" width="70" height="70">
-                                <use href="./img/icons.svg#icon-diagram"></use>
-                            </svg>
-                        </div>
-                        <h3 class="benefits__sub-title">Планування</h3>
-                        <p class="benefits__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                    </li>
-                    <li class="benefits__card">
-                        <div class="benefits__thumb">
-                            <svg class="benefits__icon" width="70" height="70">
-                                <use href="./img/icons.svg#icon-astronaut"></use>
-                            </svg>
-                        </div>
-                        <h3 class="benefits__sub-title">Сучасні технології</h3>
-                        <p class="benefits__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="performance">
+        <section class="hero">
             <div class="container">
-                <h2 class="performance__title  title">Чим ми займаємося</h2>
-                <ul class="performance__card-list list">
-                    <li class="performance__card">
-                        <picture>
-                            <source 
-                            srcset="./img/coding.jpg 1x, ./img/coding2x.jpg 2x" media="(min-width: 1200px)">
-                            <img
-                            src="#" alt="coding" width="370" height="294">
-                        </picture>
-                        <p class="performance__text">Десктопні додатки</p>
-                    </li>
-                    <li class="performance__card">
-                        <picture>
-                            <source
-                            srcset="./img/adaptive.jpg 1x, ./img/adaptive2x.jpg 2x" media="(min-width: 1200px)">
-                            <img
-                            src="#" alt="adaptive" width="370" height="294">
-                        </picture>
-                        <p class="performance__text">Мобільні додатки</p>
-                    </li>
-                    <li class="performance__card">
-                        <picture>
-                            <source
-                            srcset="./img/design.jpg 1x, ./img/design2x.jpg 2x" media="(min-width: 1200px)">
-                            <img
-                            src="#" alt="design" width="370" height="294">
-                        </picture>
-                        <p class="performance__text">Дизайнерські рішення</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="team">
-            <div class="container">
-                <h2 class="team__title  title">Наша команда</h2>
-                <ul class="team__card-list list">
-                    <li class="team__card">
-                        <picture>
-                            <source srcset="
-                            ./img/igor.webp 1x,
-                            ./img/igor2x.webp 2x"
-                            media="(max-width: 767px)"
-                            type="image/webp">
-                            <source srcset="
-                            ./img/igor.jpg 1x,
-                            ./img/igor2x.jpg 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="
-                            ./img/igorT.jpg 1x,
-                            ./img/igorT2x.jpg 2x"
-                            media="(max-width: 1199px)">
-                            <source srcset="
-                            ./img/igorPC.jpg 1x,
-                            ./img/igorPC2x.jpg 2x"
-                            media="(min-width: 1200px)">
-                            <img class="team__card-img" src="./img/igor.jpg" alt="Ігор" width="450" height="460">
-                        </picture>
-                        <div class="team__description">
-                            <h3 class="team__sub-title title">Ігор Дем'яненко</h3>
-                            <p class="team__text">Product Designer</p>
-                            <ul class="social__list--team social__list list">
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://www.instagram.com" lang="en" aria-label="instagram">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://twitter.com" lang="en" aria-label="twitter">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://facebook.com" lang="en" aria-label="facebook">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://linkedin.com" lang="en" aria-label="linkedin">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="team__card">
-                        <picture>
-                            <source srcset="
-                            ./img/olga.webp 1x,
-                            ./img/olga2x.webp 2x"
-                            media="(max-width: 767px)"
-                            type="image/webp">
-                            <source srcset="
-                            ./img/olga.jpg 1x,
-                            ./img/olga2x.jpg 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="
-                            ./img/olgaT.jpg 1x,
-                            ./img/olgaT2x.jpg 2x"
-                            media="(max-width: 1199px)">
-                            <source srcset="
-                            ./img/olgaPC.jpg 1x,
-                            ./img/olgaPC2x.jpg 2x"
-                            media="(min-width: 1200px)">
-                            <img class="team__card-img" src="./img/olga.jpg" alt="olga" width="450" height="460">
-                        </picture>
-                        <div class="team__description">
-                            <h3 class="team__sub-title title">Ольга Репіна</h3>
-                            <p class="team__text">Frontend Developer</p>
-                            <ul class="social__list--team social__list list">
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://www.instagram.com" lang="en" aria-label="instagram">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://twitter.com" lang="en" aria-label="twitter">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://facebook.com" lang="en" aria-label="facebook">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://linkedin.com" lang="en" aria-label="linkedin">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="team__card">
-                        <picture>
-                            <source srcset="
-                            ./img/nikolay.webp 1x,
-                            ./img/nikolay2x.webp 2x"
-                            media="(max-width: 767px)"
-                            type="image/webp">
-                            <source srcset="
-                            ./img/nikolay.jpg 1x,
-                            ./img/nikolay2x.jpg 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="
-                            ./img/nikolayT.jpg 1x,
-                            ./img/nikolayT2x.jpg 2x"
-                            media="(max-width: 1199px)">
-                            <source srcset="
-                            ./img/nikolayPC.jpg 1x,
-                            ./img/nikolayPC2x.jpg 2x"
-                            media="(min-width: 1200px)">
-                            <img class="team__card-img" src="./img/nikolay.jpg" alt="nikolay" width="450" height="460">
-                        </picture>
-                        <div class="team__description">
-                            <h3 class="team__sub-title title">Ніколай Тарасов</h3>
-                            <p class="team__text">Marketing</p>
-                            <ul class="social__list--team social__list list">
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://www.instagram.com" lang="en" aria-label="instagram">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://twitter.com" lang="en" aria-label="twitter">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://facebook.com" lang="en" aria-label="facebook">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://linkedin.com" lang="en" aria-label="linkedin">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="team__card">
-                        <picture>
-                            <source srcset="
-                            ./img/mihail.webp 1x,
-                            ./img/mihail2x.webp 2x"
-                            media="(max-width: 767px)"
-                            type="image/webp">
-                            <source srcset="
-                            ./img/mihail.jpg 1x,
-                            ./img/mihail2x.jpg 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="
-                            ./img/mihailT.jpg 1x,
-                            ./img/mihailT2x.jpg 2x"
-                            media="(max-width: 1199px)">
-                            <source srcset="
-                            ./img/mihailPC.jpg 1x,
-                            ./img/mihailPC2x.jpg 2x"
-                            media="(min-width: 1200px)">
-                            <img class="team__card-img" src="./img/mihail.jpg" alt="mihail" width="450" height="460">
-                        </picture>
-                        <div class="team__description">
-                            <h3 class="team__sub-title title">Михайло Єрмаков</h3>
-                            <p class="team__text">UI Designer</p>
-                            <ul class="social__list--team social__list list">
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://www.instagram.com" lang="en" aria-label="instagram">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://twitter.com" lang="en" aria-label="twitter">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://facebook.com" lang="en" aria-label="facebook">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--team link" href="https://linkedin.com" lang="en" aria-label="linkedin">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="./img/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="clients">
-            <div class="container">
-                <h2 class="clients__title  title">Постійні клієнти</h2>
-                <ul class="clients__list list">
-                    <li class="client__item">
-                        <a class="client__link link" href="#">
-                            <svg class="client__icon" width="106" height="60" aria-label="клієт">
-                                <use href="./img/icons.svg#icon-Logo1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link link" href="#" aria-label="клієт 1">
-                            <svg class="client__icon" width="106" height="60">
-                                <use href="./img/icons.svg#icon-Logo2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link link" href="#" aria-label="клієт 2">
-                            <svg class="client__icon" width="106" height="60">
-                                <use href="./img/icons.svg#icon-Logo3"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link link" href="#" aria-label="клієт 3">
-                            <svg class="client__icon" width="106" height="60">
-                                <use href="./img/icons.svg#icon-Logo4"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link link" href="#" aria-label="клієт 4">
-                            <svg class="client__icon" width="106" height="60">
-                                <use href="./img/icons.svg#icon-Logo5"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link link" href="#" aria-label="клієт 5">
-                            <svg class="client__icon" width="106" height="60">
-                                <use href="./img/icons.svg#icon-Logo6"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="footer" id="contacts">
-        <div class="footer__container container">
-            <div class="footer__contacts">
-                <a class="footer__logo link" href="./index.html"><span>Web</span>Studio</a>
-                <address class="footer__address">
-                    <ul class="footer__address-list list">
-                        <li class="footer__address-item">
-                            <a class="footer__address-link link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                <div class="hero__soc">
+                    <ul class="hero__soc-list soc-list list">
+                        <li class="hero__soc-item">
+                            <a class="hero__soc-link link" href="https://www.instagram.com">Instagram</a>
                         </li>
-                        <li class="footer__address-item">
-                            <a class="footer__mail link" href="mailto:info@devstudio.com">info@example.com</a>
+                        <li class="hero__soc-item">
+                            <a class="hero__soc-link link" href="https://www.youtube.com/">Youtube</a>
                         </li>
-                        <li class="footer__address-item">
-                            <a class="footer__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </ul>
+                </div>
+                <div class="hero__content">
+                    <p class="hero__pre-title pre-title pre-title--color-light">A hair salon for men in Kyiv</p>
+                    <h1 class="hero__title title">BarberShop</h1>
+                    <p class="hero__after-title after-title">We are experts in trendy men’s haircuts. We work quickly,
+                    carefully and with style.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about section">
+            <div class="container">
+                <ul class="pic-list list">
+                    <li class="pic-item">
+                    <img
+                        src="./img/about1T.jpg"
+                        alt="haircuts"
+                        width="330"
+                        height="235"
+                    />
+                    </li>
+                    <li class="pic-item">
+                    <img
+                        src="./img/about2T.jpg"
+                        alt="haircuts"
+                        width="330"
+                        height="235"
+                    />
+                    </li>
+                </ul>
+                <div class="about__content">
+                    <p class="about__pre-title pre-title pre-title--color-dark">About</p>
+                    <h2 class="about__title title">Best Barbershop in your city</h2>
+                    <p class="about__after-title after-title">If you want to add more confidence to your image, you should
+                    definitely visit us.</p>
+                    <p class="about__text">We are a team that never stops at what has been achieved and are
+                    thirsty for changes. And when you fall into the hands of our
+                    master, you will never be the same again. We are a team that is
+                    always "on the same wave" with clients. Therefore, we are always
+                    ready to improve everyone who comes to us!</p>
+                    <button type="button" class="primary-btn primary-btn--dark btn">online-booking</button>
+                </div>
+            </div>
+        </section>
+        <section class="services section">
+            <div class="container">
+                <p class="services__pre-title pre-title pre-title--color-light">Spend your time with the best masters</p>
+                <h2 class="services__title title">Services and prices</h2>
+                <div class="services__wrap">
+                    <div class="services__table">
+                        <ul class="services__list list">
+                            <li class="services__item">
+                                <p class="services__text">Men’s haircut</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 300 uah.</p>
+                            </li>
+                            <li class="services__item">
+                                <p class="services__text">Beard trim</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 300 uah.</p>
+                            </li>
+                            <li class="services__item">
+                                <p class="services__text">Mustache trim</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 200 uah.</p>
+                            </li>
+                            <li class="services__item">
+                                <p class="services__text">Straight razor shave</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 200 uah.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__table">
+                        <ul class="services__list list">
+                            <li class="services__item">
+                                <p class="services__text">Trainee’s haircut</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 50 uah.</p>
+                            </li>
+                            <li class="services__item">
+                                <p class="services__text">Haircut under the nozzle</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 200 uah.</p>
+                            </li>
+                            <li class="services__item">
+                                <p class="services__text">Children’s haircut (0-12 y.o.)</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 300 uah.</p>
+                            </li>
+                            <li class="services__item">
+                                <p class="services__text">Camouflage of gray hair</p>
+                                <span class="services__line"></span>
+                                <p class="price__text">from 200 uah.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="services__primary-btn primary-btn primary-btn--light btn">online-booking</button>
+            </div>
+        </section>
+        <section class="benefits section">
+            <div class="container">
+                <div class="benefits__content">
+                    <p class="benefits__pre-title pre-title">Old traditional school</p>
+                    <h2 class="benefits__title title">¿Why people come to us?</h2>
+                    <p class="benefits__after-title after-title">Only good things are said about us. But it's better to see and
+                    feel 1 time than read 10 times.</p>
+                </div>
+                <div class="benefits__cards">
+                    <ul class="benefits__list list">
+                        <li class="benefits__item">
+                            <div class="benefits__item-top"><span>600</span><sup>+</sup></div>
+                            <p class="benefits__item-text">Satisfied customers per day</p>
+                        </li>
+                        <li class="benefits__item">
+                            <div class="benefits__item-top"><span>50</span><sup>+</sup></div>
+                            <p class="benefits__item-text">Awards for excellent service</p>
+                        </li>
+                        <li class="benefits__item">
+                            <div class="benefits__item-top"><span>20</span><sup>+</sup></div>
+                            <p class="benefits__item-text">Kyiv’s best barbers</p>
+                        </li>
+                        <li class="benefits__item">
+                            <div class="benefits__item-top"><span>100</span><sup>+</sup></div>
+                            <p class="benefits__item-text">Gifts for regular customers</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="barbers" class="barbers section">
+            <div class="container">
+                <p class="barbers__pre-title pre-title pre-title--color-dark">For true enjoyers of the atmosphere</p>
+                <h2 class="barbers__title title">Our barbers</h2>
+                <ul class="barbers__list list">
+                    <li class="barbers__item">
+                        <picture>
+                            <source srcset="
+                            ./img/barb1.jpg 1x,
+                            ./img/barb1@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./img/barb1T.jpg 1x,
+                            ./img/barb1T@2x.jpg 2x"
+                            media="(max-width: 1199px)">
+                            <source srcset="
+                            ./img/barb1PC.jpg 1x,
+                            ./img/barb1PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="barbers__card-img" src="./img/barb1.jpg" alt="barber" width="418" height="346">
+                        </picture>
+                        <div class="barbers__description">
+                            <h3 class="barbers__sub-title title">John Smith</h3>
+                            <p class="barbers__text">Extreme Barber</p>
+                            <ul class="social__list list">
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://www.instagram.com"aria-label="instagram">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://twitter.com" aria-label="twitter">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://facebook.com"" aria-label="facebook">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://linkedin.com" aria-label="linkedin">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="barbers__item">
+                        <picture>
+                            <source srcset="
+                            ./img/barb2.jpg 1x,
+                            ./img/barb2@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./img/barb2T.jpg 1x,
+                            ./img/barb2T@2x.jpg 2x"
+                            media="(max-width: 1199px)">
+                            <source srcset="
+                            ./img/barb2PC.jpg 1x,
+                            ./img/barb2PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="barbers__card-img" src="./img/barb2.jpg" alt="barber" width="418" height="346">
+                        </picture>
+                        <div class="barbers__description">
+                            <h3 class="barbers__sub-title title">Michele Doe</h3>
+                            <p class="barbers__text">Extreme Barber</p>
+                            <ul class="social__list list">
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://www.instagram.com"aria-label="instagram">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://twitter.com" aria-label="twitter">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://facebook.com"" aria-label="facebook">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://linkedin.com" aria-label="linkedin">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="barbers__item">
+                        <picture>
+                            <source srcset="
+                            ./img/barb3.jpg 1x,
+                            ./img/barb3@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./img/barb3T.jpg 1x,
+                            ./img/barb3T@2x.jpg 2x"
+                            media="(max-width: 1199px)">
+                            <source srcset="
+                            ./img/barb3PC.jpg 1x,
+                            ./img/barb3PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="barbers__card-img" src="./img/barb3.jpg" alt="barber" width="418" height="346">
+                        </picture>
+                        <div class="barbers__description">
+                            <h3 class="barbers__sub-title title">Alan Black</h3>
+                            <p class="barbers__text">Extreme Barber</p>
+                            <ul class="social__list list">
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://www.instagram.com"aria-label="instagram">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://twitter.com" aria-label="twitter">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://facebook.com"" aria-label="facebook">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="https://linkedin.com" aria-label="linkedin">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="gallery section">
+            <div class="container">
+            <p class="gallery__pre-title pre-title">
+                In Latin, "barba" means "beard"
+            </p>
+            <h2 class="visually-hidden">Gallery</h2>
+            <ul class="gallery__list list">
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="
+                        ./img/img_1.jpg 1x,
+                        ./img/img_1@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                        <source srcset="
+                        ./img/img_1T.jpg 1x,
+                        ./img/img_1T@2x.jpg 2x"
+                        media="(max-width: 1199px)">
+                        <source srcset="
+                        ./img/img_1PC.jpg 1x,
+                        ./img/img_1PC@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img class="gallery__card-img" src="./img/img_1.jpg" alt="barber" width="418" height="360">
+                    </picture>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="
+                        ./img/img_2.jpg 1x,
+                        ./img/img_2@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                        <source srcset="
+                        ./img/img_2T.jpg 1x,
+                        ./img/img_2T@2x.jpg 2x"
+                        media="(max-width: 1199px)">
+                        <source srcset="
+                        ./img/img_2PC.jpg 1x,
+                        ./img/img_2PC@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img class="gallery__card-img" src="./img/img_2.jpg" alt="barber" width="418" height="360">
+                    </picture>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="
+                        ./img/img_3.jpg 1x,
+                        ./img/img_3@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                        <source srcset="
+                        ./img/img_3T.jpg 1x,
+                        ./img/img_3T@2x.jpg 2x"
+                        media="(max-width: 1199px)">
+                        <source srcset="
+                        ./img/img_3PC.jpg 1x,
+                        ./img/img_3PC@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img class="gallery__card-img" src="./img/img_3.jpg" alt="barber" width="418" height="360">
+                    </picture>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="
+                        ./img/img_4.jpg 1x,
+                        ./img/img_4@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                        <source srcset="
+                        ./img/img_4T.jpg 1x,
+                        ./img/img_4T@2x.jpg 2x"
+                        media="(max-width: 1199px)">
+                        <source srcset="
+                        ./img/img_4PC.jpg 1x,
+                        ./img/img_4PC@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img class="gallery__card-img" src="./img/img_4.jpg" alt="barber" width="418" height="360">
+                    </picture>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <div class="contact-wrap">
+            <div class="container">
+                <section class="online section">
+                <h2 class="title online__title">online-booking</h2>
+                <form class="online__form">
+                    <div class="online__field">
+                    <input
+                        type="text"
+                        name="online__name "
+                        class="online__input online__item"
+                        placeholder=" "
+                        id="online__name"
+                        required
+                    />
+                    <label for="online__name" class="online__label">Name*</label>
+                    </div>
+                    <div class="online__field">
+                    <input
+                        type="tel"
+                        name="online__tel"
+                        class="online__input online__item"
+                        placeholder=" "
+                        id="online__tel"
+                        required
+                    />
+                    <label for="online__tel" class="online__label">Phone*</label>
+                    </div>
+                    <div class="online__field">
+                    <textarea
+                        class="online__text online__item"
+                        name="online__message"
+                        placeholder=" "
+                        id="online__text"
+                    ></textarea>
+                    <label for="online__text" class="online__label">Message</label>
+                    </div>
+                    <button type="submit" class="primary-btn primary-btn--light btn">online-booking</button>
+                </form>
+                </section>
+                <section class="contacts section">
+                <h2 class="title contacts__title">Contacts</h2>
+                <address class="contacts__address">
+                    <a href="https://goo.gl/maps/HPy8ZSEA6FNUYbvNA"
+                        target="_blank"
+                        class="contacts__address-link link"
+                        rel="noopener noreferrer nofollow">
+                            <svg class="tel__icon icon" width="20" height="20">
+                                <use href="./img/icons.svg#icon-map"></use>
+                            </svg>
+                        st. Vasylkivska, 7A Kyiv, 08132
+                    </a>
+                    <ul class="contacts__list list">
+                        <li class="contacts__item">
+                            <a href="tel:+380441111111" class="contacts__link link">
+                                <svg class="tel__icon icon" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-tel"></use>
+                                </svg>
+                                +38 044 111 11 11
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="mailto:barbershop@email.com" class="contacts__link">
+                                <svg class="tel__icon icon" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-mail"></use>
+                                </svg>
+                                barbershop@email.com
+                            </a>
                         </li>
                     </ul>
                 </address>
-            </div>
-            <div class="footer__socials">
-                <p class="footer__text">Приєднуйтесь</p>
-                <ul class="social__list--footer social__list list">
-                    <li class="social__item">
-                        <a class="social__link social__link--footer link" href="https://www.instagram.com" lang="en" aria-label="instagram">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--footer link" href="https://twitter.com" lang="en" aria-label="twitter">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--footer link" href="https://facebook.com" lang="en" aria-label="facebook">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--footer link" href="https://linkedin.com" lang="en" aria-label="linkedin">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__subscribe">
-                <p class="footer__text">Підпишіться на розсилку</p>
-                <form class="footer__form">
-                    <input class="footer__input" type="useremail" name="useremail" placeholder="E-mail">
-                    <button class="primary-btn primary-btn--logos btn">Підписатися
-                        <svg class="primary-btn__icon" width="24" height="24">
-                            <use href="./img/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
+                <p class="pre-title contacts__time-title">Working hours</p>
+                <p class="contacts__time-text">Every day from 9:00 to 22:00</p>
+                </section>
             </div>
         </div>
+    </main>
+    <footer>
+        <p>&#169; Copyright 2020</p>
+        <ul class="footer__soc-list soc-list list">
+            <li>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
+            </li>
+        </ul>
     </footer>
-    <div class="backdrop backdrop--is-hidden" data-modal>
-        <div class="modal">
-            <button data-modal-close type="button" class="modal__close-btn btn">
-                <svg class="modal__close-icon" width="18" height="18">
-                    <use href="./img/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
-            <form class="modal__form">
-                <div class="input">
-                    <label for="username" class="input__label">Ім'я</label>
-                    <div class="input__wrap">
-                        <input class="input__field" type="text" name="username" id="username">
-                        <svg class="input__icon" width="18" height="18">
-                            <use href="./img/icons.svg#icon-person"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="input">
-                    <label for="usertel" class="input__label">Телефон</label>
-                    <div class="input__wrap">
-                        <input class="input__field" type="usertel" name="usertel" id="usertel">
-                        <svg class="input__icon" width="18" height="18">
-                            <use href="./img/icons.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="input">
-                    <label for="useremail" class="input__label">Пошта</label>
-                    <div class="input__wrap">
-                        <input class="input__field" type="useremail" name="useremail" id="useremail">
-                        <svg class="input__icon" width="18" height="18">
-                            <use href="./img/icons.svg#icon-email"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="input input__comment">
-                    <label for="usercomment" class="input__label">Коментар</label>
-                    <textarea class="input__textarea" name="usercomment" id="usercomment" placeholder="Введіть текст"></textarea>
-                </div>
-                <label class="check">
-                    <input class="check__box" type="checkbox" name="checkbox" value="accept">
-                    <span class="check__square">
-                        <svg class="check__icon" width="16" height="15">
-                            <use href="./img/icons.svg#icon-check"></use>
-                        </svg>
-                    </span>
-                    Погоджуюся з розсилкою та приймаю  
-                    <a class="check__link link" href="#">Умови договору</a>
-                </label>
-                <button class="primary-btn btn">Відправити</button>
-                <svg class="check__icon" width="16" height="15">
-                    <use href="./img/icons.svg#icon-check"></use>
-                </svg>
-            </form>
-        </div>
-    </div>
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
