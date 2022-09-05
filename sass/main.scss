@@ -6,13 +6,12 @@
 @import 'components/container';
 @import 'components/primary-btn';
 @import 'components/social__list';
-@import 'components/soc-list';
 @import 'components/pre-title';
 @import 'components/after-title';
 
 @import 'layout/header';
 @import 'components/header__mobile-menu';
-@import 'components/header__nav-list';
+@import 'components/header__menu';
 @import 'components/header__contacts';
 
 @import 'layout/hero';
@@ -27,5 +26,9 @@
 
 @import 'layout/gallery';
 
+@import 'layout/online';
+
+@import 'layout/contact-wrap';
+@import 'layout/contacts';
 
 @import 'layout/footer';

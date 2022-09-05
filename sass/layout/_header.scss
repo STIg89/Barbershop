@@ -1,33 +1,58 @@
 .header {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 40px 0;
-    width: 100%;
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // padding: 40px 0;
+    // width: 100%;
 }
 .header__container {
     position: relative;
-    @include flex(center, space-between);
+    
+    @include mobile {
+        @include flex(center, space-between);
+    }
+    
 }
 .container {
 }
 .header__logo {
-    
+    position: absolute;
+    top: 40px;
+
+    @include tablet {
+        top: 32px;
+        left: 50px;
+    }
 }
 .link {
 }
 .logo {
     fill: var(--secondaryTitle);
+
+    @include tablet {
+        fill: var(--primaryElem)
+    }
 }
 .mobile_menu-btn {
+    position: absolute;
+    right: 11px;
+    top: 28px;
+    padding: 20px;
     border: none;
     background: transparent;
+    
+    @include tablet {
+        display: none;
+    }
 }
 .btn {
 }
 .mobile_menu-icon {
+    fill: currentColor;
 }
 .icon {
 }
 .icon-burger {
+    color: var(--secondaryTitle);
+    fill: currentColor;
 }

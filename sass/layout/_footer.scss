@@ -1,0 +1,48 @@
+.footer {
+
+}
+
+.footer__container {
+    padding-top: var(--componentGap);
+    padding-bottom: var(--componentGap);
+    // display: flex;
+    // justify-content: space-between;
+    // height: 138px;
+
+    p {
+        @include font (600, 11, 15, 0.02);
+        display: block;
+        color: var(--secondaryText);
+        // align-self: flex-end;
+    }
+}
+.footer__soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    @include font (600, 11, 15, 0.02);
+    color: var(--primaryElem);
+    margin-bottom: var(--textGap);
+
+    &:before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: var(--primaryElem);
+    }
+}
+.soc-list {
+}
+.list {
+}
+.footer__soc-item--instagram {
+}
+.footer__soc-item {
+}
+.footer__soc-link {
+}
+.link {
+}
+.footer__soc-item--youtube {
+}

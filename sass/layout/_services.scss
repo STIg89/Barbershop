@@ -16,6 +16,10 @@
     @include font (700, 40, 47, 0.05);
     color: var(--secondaryTitle);
     margin-bottom: var(--componentGap);
+
+    @include miniMobile {
+        font-size: 8.33vw;
+    }
 }
 .title {
     
@@ -53,6 +57,10 @@
     @include font;
     line-height: 1.43;
     color: var(--secondaryText);
+
+    @include miniMobile {
+        font-size: 2.92vw;
+    }
 }
 
 .price__item {

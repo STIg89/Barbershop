@@ -18,6 +18,10 @@
     @include font (700, 42, 49, 0.05);
     color: var(--primaryElem);
     margin-bottom: var(--componentGap);
+
+    @include miniMobile {
+        font-size: 8.75vw;
+    }
 }
 .title {
 }

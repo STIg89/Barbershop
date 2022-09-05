@@ -25,6 +25,7 @@
     @include font (700, 28, 33, 0.05);
     color: var(--primaryElem);
     max-width: 306px;
+    margin-bottom: var(--textGap);
 }
 .title {
 }

@@ -1,0 +1,64 @@
+.contacts {
+}
+.section {
+}
+.title {
+}
+.contacts__title {
+    @include font (700, 42, 49, 0.05);
+    text-align: center;
+    color: var(--secondaryTitle);
+    margin-bottom: 40px;
+
+    @include miniMobile {
+        font-size: 8.75vw;
+    }
+}
+.contacts__address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--componentGap)
+}
+.contacts__address-link {
+    @include font (700, 18, 30, 0.02);
+    color: var(--secondaryText);
+    margin-bottom: var(--textGap);
+
+    @include miniMobile {
+        font-size: 3.75vw;
+    }
+}
+.link {
+}
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 16px;
+}
+.icon {
+}
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--textGap);
+}
+.list {
+}
+.contacts__item {
+}
+.contacts__link {
+    @include font (400, 18, 30, 0.02);
+    color: var(--secondaryText);
+    display: flex;
+    align-items: center;
+}
+.contacts__link--mail {
+    text-decoration: underline;
+}
+.contacts__time-title {
+    color: var(--secondaryTitle);
+    margin-bottom: var(--textGap);
+}
+.contacts__time-text {
+    @include font (400, 18, 30, 0.02);
+    color: var(--secondaryText);
+}

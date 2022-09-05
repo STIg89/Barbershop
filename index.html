@@ -26,48 +26,75 @@
                 <use class="icon-burger" href="./img/icons.svg#icon-menu"></use>
             </svg>         
             </button>
-            <div class="header__menu header__mobile-menu header__mobile-menu--is-hidden" data-menu>
+            <div class="backdrop backdrop--is-hidden" data-menu>
+                <div class="header__mobile-menu header__mobile-menu--is-hidden">
+                    <nav class="mobile__nav">
+                        <button type="button" class="mobile_menu-btn--close btn" data-menu-close aria-label="close menu">
+                            <svg class="mobile_menu-icon icon" width="40" height="40">
+                                <use class="icon-closeMobile" href="./img/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mobile__nav-list list">
+                            <li class="nav-item">
+                                <a class="nav-list__link link nav-list__link--current" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-list__link link" href="#service">Services and prices</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-list__link link" href="#barbers">Barbers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-list__link link" href="#contacts">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile__contacts">
+                        <a href="tel:+380441111111" class="contacts__tel link">+38 044 111 11 11</a>
+                        <button type="button" class="primary-btn primary-btn--header btn">online-booking</button>
+                    </div>
+                    <ul class="mobile_soc-list soc-list list">
+                        <li class="mobile__soc-item--instagram mobile_soc-item">
+                            <a class="mobile__soc-link link" href="https://www.instagram.com">Instagram</a>
+                        </li>
+                        <li class="mobile_soc-item--youtube mobile_soc-item">
+                            <a class="mobile__soc-link link" href="https://www.youtube.com/">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__menu">
                 <nav class="header__nav">
-                    <button type="button" class="mobile_menu-btn--close btn" data-menu-close aria-label="close menu">
-                        <svg class="mobile_menu-icon icon" width="40" height="40">
-                            <use class="icon-closeMobile" href="./img/icons.svg#icon-close"></use>
-                        </svg>
-                    </button>
                     <ul class="header__nav-list list">
-                        <li class="nav-item">
-                            <a class="nav-list__link link nav-list__link--current" href="#about">About</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-list-link link" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-list__link link" href="#service">Services and prices</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-list-link link" href="#service">Services and prices</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-list__link link" href="#barbers">Barbers</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-list-link link" href="#barbers">Barbers</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-list__link link" href="#contacts">Contacts</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-list-link link" href="#contacts">Contacts</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header__contacts">
-                    <a href="tel:+380441111111" class="contacts__tel link">+38 044 111 11 11</a>
-                    <button data-modal-open type="button" class="primary-btn primary-btn--header btn">online-booking</button>
+                    <button type="button" class="primary-btn primary-btn--header btn">online-booking</button>
+                    <a href="tel:+380441111111" class="header__tel link">+38 044 111 11 11</a>
                 </div>
-                <ul class="mobile_soc-list soc-list list">
-                    <li class="mobile_soc-item">
-                        <a class="mobile__soc-link link" href="https://www.instagram.com">Instagram</a>
-                    </li>
-                    <li class="mobile_soc-item">
-                        <a class="mobile__soc-link link" href="https://www.youtube.com/">Youtube</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="hero__container container">
                 <div class="hero__soc">
                     <ul class="hero__soc-list soc-list list">
+                        <li class="hero__soc-item">
+                            <span></span>
+                        </li>
                         <li class="hero__soc-item">
                             <a class="hero__soc-link link" href="https://www.instagram.com">Instagram</a>
                         </li>
@@ -84,7 +111,7 @@
                 </div>
             </div>
         </section>
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container">
                 <ul class="pic-list list">
                     <li class="pic-item">
@@ -118,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="services section">
+        <section class="services section" id="service">
             <div class="container">
                 <p class="services__pre-title pre-title pre-title--color-light">Spend your time with the best masters</p>
                 <h2 class="services__title title">Services and prices</h2>
@@ -205,7 +232,7 @@
                 </div>
             </div>
         </section>
-        <section id="barbers" class="barbers section">
+        <section class="barbers section" id="barbers">
             <div class="container">
                 <p class="barbers__pre-title pre-title pre-title--color-dark">For true enjoyers of the atmosphere</p>
                 <h2 class="barbers__title title">Our barbers</h2>
@@ -447,7 +474,7 @@
         <div class="contact-wrap">
             <div class="container">
                 <section class="online section">
-                <h2 class="title online__title">online-booking</h2>
+                <h2 class="title online__title">Online-booking</h2>
                 <form class="online__form">
                     <div class="online__field">
                     <input
@@ -480,17 +507,17 @@
                     ></textarea>
                     <label for="online__text" class="online__label">Message</label>
                     </div>
-                    <button type="submit" class="primary-btn primary-btn--light btn">online-booking</button>
+                    <button type="submit" class="online__primary-btn primary-btn primary-btn--light btn">Send</button>
                 </form>
                 </section>
-                <section class="contacts section">
+                <section class="contacts section" id="contacts">
                 <h2 class="title contacts__title">Contacts</h2>
                 <address class="contacts__address">
                     <a href="https://goo.gl/maps/HPy8ZSEA6FNUYbvNA"
                         target="_blank"
                         class="contacts__address-link link"
                         rel="noopener noreferrer nofollow">
-                            <svg class="tel__icon icon" width="20" height="20">
+                            <svg class="contacts__icon icon" width="20" height="20">
                                 <use href="./img/icons.svg#icon-map"></use>
                             </svg>
                         st. Vasylkivska, 7A Kyiv, 08132
@@ -498,15 +525,15 @@
                     <ul class="contacts__list list">
                         <li class="contacts__item">
                             <a href="tel:+380441111111" class="contacts__link link">
-                                <svg class="tel__icon icon" width="20" height="20">
+                                <svg class="contacts__icon icon" width="20" height="20">
                                     <use href="./img/icons.svg#icon-tel"></use>
                                 </svg>
                                 +38 044 111 11 11
                             </a>
                         </li>
                         <li class="contacts__item">
-                            <a href="mailto:barbershop@email.com" class="contacts__link">
-                                <svg class="tel__icon icon" width="20" height="20">
+                            <a href="mailto:barbershop@email.com" class="contacts__link contacts__link--mail link">
+                                <svg class="contacts__icon icon" width="20" height="20">
                                     <use href="./img/icons.svg#icon-mail"></use>
                                 </svg>
                                 barbershop@email.com
@@ -520,16 +547,18 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>&#169; Copyright 2020</p>
-        <ul class="footer__soc-list soc-list list">
-            <li>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
-            </li>
-            <li>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
-            </li>
-        </ul>
+    <footer class="footer">
+        <div class="footer__container container">
+            <ul class="footer__soc-list soc-list list">
+                <li class="footer__soc-item--instagram footer__soc-item">
+                    <a class="footer__soc-link link" href="https://www.instagram.com">Instagram</a>
+                </li>
+                <li class="footer__soc-item--youtube footer__soc-item">
+                    <a class="footer__soc-link link" href="https://www.youtube.com/">Youtube</a>
+                </li>
+            </ul>
+            <p>&#169; Copyright 2020</p>
+        </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
 </body>

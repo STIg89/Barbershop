@@ -1,25 +1,62 @@
-.header__mobile-menu {
-    position: absolute;
-    right: 0;
+.backdrop {
+    position: fixed;
     top: 0;
-    max-width: 337px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 480px;
     width: 100%;
-    height: 100vh;
-    background-color: var(--bgLG);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 1;
+    transition: opacity var(--duration) var(--cubic),
+    visibility var(--duration) var(--cubic),
+    display var(--duration) var(--cubic),
+    z-index var(--duration) var(--cubic);
 
     &--is-hidden {
-        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    @include tablet {
         display: none;
     }
 }
-.header__nav {
+
+.header__mobile-menu {
+    margin-left: auto;
+    max-width: 337px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgW);
+    transition: transform var(--duration) var(--cubic);
+    padding: 118px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    .backdrop--is-hidden & {
+        transform: translateX(100%);
+    }
+}
+.mobile__nav {
+    
 }
 .mobile_menu-btn--close {
     position: absolute;
-    top: 48px;
-    right: 31px;
+    top: 28px;
+    right: 11px;
+    margin-left: auto;
+    padding: 20px;
     border: none;
     background: transparent;
+
+    @include tablet {
+        display: none;
+    }
 }
 .btn {
 }
@@ -29,29 +66,61 @@
 }
 .icon-closeMobile {
 }
-.header__nav-list {
+.mobile__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 .list {
 }
 .nav-item {
 }
 .nav-list__link {
+    @include font (600, 18, 25, 0.1);
+    color: var(--primaryElem);
 }
 .link {
 }
 .nav-list__link--current {
 }
-.header__contacts {
+.mobile__contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 194px;
+    gap: 24px;
 }
 .contacts__tel {
+    @include font (600, 18, 25, 0.1);
+    color: var(--primaryElem);
 }
 .primary-btn {
 }
 .mobile_soc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .mobile_soc-item--youtube {
+        margin-left: 101px;
+    }
+}
+
+.mobile__soc-item--instagram {
+    display: flex;
+    align-items: center;
+    &:before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: var(--primaryElem);
+        margin-right: 40px;
+    }
 }
 .soc-list {
 }
 .mobile_soc-item {
 }
 .mobile__soc-link {
+    @include font (600, 14, 19, 0.2);
+    color: var(--primaryElem);
 }
