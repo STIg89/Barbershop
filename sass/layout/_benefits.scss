@@ -2,9 +2,14 @@
 }
 .section {
 }
-.container {
+.benefits__container {
+    display: flex;
+    flex-direction: column;
 }
 .benefits__content {
+    @include tablet {
+        width: 500px;
+    }
 }
 .benefits__pre-title {
 }
@@ -33,6 +38,11 @@
 .benefits__list {
     display: flex;
     flex-wrap: wrap;
+
+    @include tablet {
+        width: 450px;
+        margin-left: auto;
+    }
 }
 .list {
 }

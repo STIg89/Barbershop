@@ -9,6 +9,10 @@
     @include tablet {
         width: 768px;
     }
+
+    @include tablet {
+        width: 1170px;
+    }
 }
 
 .hero__container {
@@ -33,22 +37,25 @@
 }
 .hero__soc-list  {
     @include tablet {
-        transform: rotate(-90deg) translate(40px, 49px);
+        transform: rotate(-90deg) translateY(50%);
         transform-origin: bottom left;
         display: flex;
         gap: 40px;
         @include font (600, 11, 15, 0.02);
         color: var(--primaryElem);
+        margin-left: 45px;
+        margin-bottom: 40px;
     }
 }
 .list {
 }
 .hero__soc-item {
     &>span {
-        display: inline-flex;
+        display: flex;
         width: 60px;
         height: 1px;
         background-color: var(--primaryElem);
+        margin-top: 7px;
     }
 }
 .hero__soc-link {
@@ -67,12 +74,7 @@
         background: var(--bgG);
         padding: 272px 111px 237px 123px;
     }
-
 }
-.hero__content>.hero__pre-title {
-    margin-bottom: var(--textGap);
-}
-
 .pre-title--color-light {
 }
 .hero__title {

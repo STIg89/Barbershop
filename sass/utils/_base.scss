@@ -9,6 +9,10 @@ body {
 .section {
     margin: 0 auto;
     padding: 84px 0;
+
+    @include tablet {
+        padding: 100px 0;
+    }
 }
 
 .btn {
@@ -16,8 +20,11 @@ body {
     font-family: inherit;
 }
 
-.icon {
-    transition: color var(--duration) var(--cubic);
+.icon,
+.link,
+.btn {
+    transition: color var(--duration) var(--cubic),
+    background-color var(--duration) var(--cubic);
 }
 
 .link:hover,

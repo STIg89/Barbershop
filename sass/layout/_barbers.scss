@@ -1,10 +1,17 @@
 .barbers {
     background-color: var(--bgLG);
     max-width: 480px;
+
+    @include tablet {
+        max-width: 768px;
+    }
 }
 .section {
 }
-.container {
+.barbers__container{
+    @include tablet {
+        padding: 0 159px;
+    }
 }
 .barbers__pre-title {
 
@@ -28,6 +35,7 @@
 .barbers__list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 64px;
 }
 .list {
@@ -36,10 +44,11 @@
 }
 .barbers__card-img {
     margin-bottom: var(--cardGap);
+    width: 100%;
 }
 .barbers__description {
     @include flex;
-    flex-direction: column
+    flex-direction: column;
 }
 .barbers__sub-title {
     @include font (400, 18, 25, 0.02);

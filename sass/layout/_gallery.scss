@@ -5,8 +5,6 @@
 .container {
 }
 .gallery__pre-title {
-}
-.pre-title {
     margin-bottom: 71px;
 }
 .visually-hidden {
@@ -20,6 +18,8 @@
 .list {
 }
 .gallery__item {
+    flex-basis: calc((100% - var(--cardGap)) / 2);
 }
 .gallery__card-img {
+    width: 100%;
 }

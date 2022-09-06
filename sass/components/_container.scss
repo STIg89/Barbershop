@@ -6,7 +6,7 @@
     }
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
-        padding: 0 31px 0 31px;
+        padding: 0 31px;
     }
 
     @include mobile {
@@ -15,11 +15,11 @@
 
     @include tablet {
         width: 768px;
-        padding: 0 39px 0 39px;
+        padding: 0 39px;
     }
 
     @include pc {
         width: 1200px;
-        padding: 0 15px 0 15px;
+        padding: 0 15px;
     }
 }

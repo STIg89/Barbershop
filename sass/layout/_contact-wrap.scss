@@ -5,19 +5,8 @@
     background-position: bottom;
     background-size: contain;
     margin: 0 auto;
-
-    @include mobile {
-        max-width: 480px;
-    }
-
-    @include tablet {
-        max-width: 768px;
-    }
-
-    @include pc {
-        max-width: 1200px;
-    }
-
+    max-width: 480px;
+    
     @media (min-resolution: 192dpi) {
         background-image: url('../img/contBG@2x.png');
     }
@@ -35,8 +24,8 @@
 
     @include pc {
         max-width: 1600px;
-        max-height: 600px;
-        padding: 200px 0;
+        // max-height: 600px;
+        // padding: 200px 0;
 
         background-image: url('../img/contBGPC.png');
         // background-size: cover;

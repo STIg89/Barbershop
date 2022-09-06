@@ -112,23 +112,33 @@
             </div>
         </section>
         <section class="about section" id="about">
-            <div class="container">
+            <div class="about__container container">
                 <ul class="pic-list list">
                     <li class="pic-item">
-                    <img
-                        src="./img/about1T.jpg"
-                        alt="haircuts"
-                        width="330"
-                        height="235"
-                    />
+                        <picture>
+                            <source srcset="
+                            ./img/about1T.jpg 1x,
+                            ./img/about1T@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                            <source srcset="
+                            ./img/about1PC.jpg 1x,
+                            ./img/about1PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="about__card-img" src="#" alt="barber" width="418"  >
+                        </picture>
                     </li>
                     <li class="pic-item">
-                    <img
-                        src="./img/about2T.jpg"
-                        alt="haircuts"
-                        width="330"
-                        height="235"
-                    />
+                        <picture>
+                            <source srcset="
+                            ./img/about2T.jpg 1x,
+                            ./img/about2T@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                            <source srcset="
+                            ./img/about2PC.jpg 1x,
+                            ./img/about2PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="about__card-img" src="#" alt="barber" width="418"  >
+                        </picture>
                     </li>
                 </ul>
                 <div class="about__content">
@@ -141,7 +151,7 @@
                     master, you will never be the same again. We are a team that is
                     always "on the same wave" with clients. Therefore, we are always
                     ready to improve everyone who comes to us!</p>
-                    <button type="button" class="primary-btn primary-btn--dark btn">online-booking</button>
+                    <button type="button" class="about__primary-btn primary-btn primary-btn--dark btn">online-booking</button>
                 </div>
             </div>
         </section>
@@ -203,7 +213,7 @@
             </div>
         </section>
         <section class="benefits section">
-            <div class="container">
+            <div class="benefits__container container">
                 <div class="benefits__content">
                     <p class="benefits__pre-title pre-title">Old traditional school</p>
                     <h2 class="benefits__title title">¿Why people come to us?</h2>
@@ -233,7 +243,7 @@
             </div>
         </section>
         <section class="barbers section" id="barbers">
-            <div class="container">
+            <div class="barbers__container container">
                 <p class="barbers__pre-title pre-title pre-title--color-dark">For true enjoyers of the atmosphere</p>
                 <h2 class="barbers__title title">Our barbers</h2>
                 <ul class="barbers__list list">
@@ -251,7 +261,7 @@
                             ./img/barb1PC.jpg 1x,
                             ./img/barb1PC@2x.jpg 2x"
                             media="(min-width: 1200px)">
-                            <img class="barbers__card-img" src="./img/barb1.jpg" alt="barber" width="418" height="346">
+                            <img class="barbers__card-img" src="./img/barb1.jpg" alt="barber" width="418"  >
                         </picture>
                         <div class="barbers__description">
                             <h3 class="barbers__sub-title title">John Smith</h3>
@@ -302,7 +312,7 @@
                             ./img/barb2PC.jpg 1x,
                             ./img/barb2PC@2x.jpg 2x"
                             media="(min-width: 1200px)">
-                            <img class="barbers__card-img" src="./img/barb2.jpg" alt="barber" width="418" height="346">
+                            <img class="barbers__card-img" src="./img/barb2.jpg" alt="barber" width="418"  >
                         </picture>
                         <div class="barbers__description">
                             <h3 class="barbers__sub-title title">Michele Doe</h3>
@@ -353,7 +363,7 @@
                             ./img/barb3PC.jpg 1x,
                             ./img/barb3PC@2x.jpg 2x"
                             media="(min-width: 1200px)">
-                            <img class="barbers__card-img" src="./img/barb3.jpg" alt="barber" width="418" height="346">
+                            <img class="barbers__card-img" src="./img/barb3.jpg" alt="barber" width="418"  >
                         </picture>
                         <div class="barbers__description">
                             <h3 class="barbers__sub-title title">Alan Black</h3>
@@ -414,7 +424,7 @@
                         ./img/img_1PC.jpg 1x,
                         ./img/img_1PC@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_1.jpg" alt="barber" width="418" height="360">
+                        <img class="gallery__card-img" src="./img/img_1.jpg" alt="barber" width="418" >
                     </picture>
                 </li>
                 <li class="gallery__item">
@@ -431,7 +441,7 @@
                         ./img/img_2PC.jpg 1x,
                         ./img/img_2PC@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_2.jpg" alt="barber" width="418" height="360">
+                        <img class="gallery__card-img" src="./img/img_2.jpg" alt="barber" width="418" >
                     </picture>
                 </li>
                 <li class="gallery__item">
@@ -448,7 +458,7 @@
                         ./img/img_3PC.jpg 1x,
                         ./img/img_3PC@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_3.jpg" alt="barber" width="418" height="360">
+                        <img class="gallery__card-img" src="./img/img_3.jpg" alt="barber" width="418" >
                     </picture>
                 </li>
                 <li class="gallery__item">
@@ -465,7 +475,7 @@
                         ./img/img_4PC.jpg 1x,
                         ./img/img_4PC@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_4.jpg" alt="barber" width="418" height="360">
+                        <img class="gallery__card-img" src="./img/img_4.jpg" alt="barber" width="418" >
                     </picture>
                 </li>
             </ul>
@@ -474,41 +484,41 @@
         <div class="contact-wrap">
             <div class="container">
                 <section class="online section">
-                <h2 class="title online__title">Online-booking</h2>
-                <form class="online__form">
-                    <div class="online__field">
-                    <input
-                        type="text"
-                        name="online__name "
-                        class="online__input online__item"
-                        placeholder=" "
-                        id="online__name"
-                        required
-                    />
-                    <label for="online__name" class="online__label">Name*</label>
-                    </div>
-                    <div class="online__field">
-                    <input
-                        type="tel"
-                        name="online__tel"
-                        class="online__input online__item"
-                        placeholder=" "
-                        id="online__tel"
-                        required
-                    />
-                    <label for="online__tel" class="online__label">Phone*</label>
-                    </div>
-                    <div class="online__field">
-                    <textarea
-                        class="online__text online__item"
-                        name="online__message"
-                        placeholder=" "
-                        id="online__text"
-                    ></textarea>
-                    <label for="online__text" class="online__label">Message</label>
-                    </div>
-                    <button type="submit" class="online__primary-btn primary-btn primary-btn--light btn">Send</button>
-                </form>
+                    <h2 class="title online__title">Online-booking</h2>
+                    <form class="online__form">
+                        <div class="online__field">
+                        <input
+                            type="text"
+                            name="online__name "
+                            class="online__input online__item"
+                            placeholder=" "
+                            id="online__name"
+                            required
+                        />
+                        <label for="online__name" class="online__label">Name*</label>
+                        </div>
+                        <div class="online__field">
+                        <input
+                            type="tel"
+                            name="online__tel"
+                            class="online__input online__item"
+                            placeholder=" "
+                            id="online__tel"
+                            required
+                        />
+                        <label for="online__tel" class="online__label">Phone*</label>
+                        </div>
+                        <div class="online__field">
+                        <textarea
+                            class="online__text online__item"
+                            name="online__message"
+                            placeholder=" "
+                            id="online__text"
+                        ></textarea>
+                        <label for="online__text" class="online__label">Message</label>
+                        </div>
+                        <button type="submit" class="online__primary-btn primary-btn primary-btn--light btn">Send</button>
+                    </form>
                 </section>
                 <section class="contacts section" id="contacts">
                 <h2 class="title contacts__title">Contacts</h2>
@@ -524,7 +534,7 @@
                     </a>
                     <ul class="contacts__list list">
                         <li class="contacts__item">
-                            <a href="tel:+380441111111" class="contacts__link link">
+                            <a href="tel:+380441111111" class="contacts__link contacts__link link">
                                 <svg class="contacts__icon icon" width="20" height="20">
                                     <use href="./img/icons.svg#icon-tel"></use>
                                 </svg>
@@ -541,8 +551,10 @@
                         </li>
                     </ul>
                 </address>
-                <p class="pre-title contacts__time-title">Working hours</p>
-                <p class="contacts__time-text">Every day from 9:00 to 22:00</p>
+                <div class="contacts__time">
+                    <p class="pre-title contacts__time-title">Working hours</p>
+                    <p class="contacts__time-text">Every day from 9:00 to 22:00</p>
+                </div>
                 </section>
             </div>
         </div>

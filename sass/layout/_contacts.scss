@@ -1,10 +1,15 @@
 .contacts {
-}
-.section {
+    @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
 }
 .title {
 }
 .contacts__title {
+    width: 100%;
+
     @include font (700, 42, 49, 0.05);
     text-align: center;
     color: var(--secondaryTitle);
@@ -17,9 +22,16 @@
 .contacts__address {
     display: flex;
     flex-direction: column;
-    margin-bottom: var(--componentGap)
+    margin-bottom: var(--componentGap);
+
+    @include tablet {
+        width: calc((100% - var(--cardGap)) / 2);
+        padding-right: 30px;
+        }
 }
 .contacts__address-link {
+    display: flex;
+
     @include font (700, 18, 30, 0.02);
     color: var(--secondaryText);
     margin-bottom: var(--textGap);
@@ -51,12 +63,30 @@
     display: flex;
     align-items: center;
 }
+
+.contacts__link--tel {
+    display: flex;
+}
+
 .contacts__link--mail {
     text-decoration: underline;
+}
+
+.contacts__time{
+    @include tablet {
+        width: calc((100% - var(--cardGap)) / 2);
+    }
 }
 .contacts__time-title {
     color: var(--secondaryTitle);
     margin-bottom: var(--textGap);
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: var(--secondaryText);
+    }
 }
 .contacts__time-text {
     @include font (400, 18, 30, 0.02);
