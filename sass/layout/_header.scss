@@ -23,6 +23,10 @@
         top: 32px;
         left: 50px;
     }
+
+    @include pc {
+        left: 15px;
+    }
 }
 .link {
 }

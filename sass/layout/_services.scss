@@ -1,26 +1,27 @@
 .services {
-    background: url('../img/servBG.png'), var(--serviceBG);
     max-width: 480px;
+    background: url('../img/servBG.png') center no-repeat, var(--serviceBG);
+    background-size: cover;
 
     @media (min-resolution: 192dpi) {
-        background-image: url('../img/servBG@2x.png');
+        background: url('../img/servBG@2x.png') center no-repeat, var(--serviceBG);
     }
 
     @include tablet {
         max-width: 768px;
-        background-image: url('../img/servBGT.png');
+        background: url('../img/servBGT.png') center no-repeat, var(--serviceBG);
 
         @media (min-resolution: 192dpi) {
-            background-image: url('../img/servBGT@2x.png');
+            background: url('../img/servBGT@2x.png') center no-repeat, var(--serviceBG);
         }
     }
 
     @include pc {
         max-width: 1600px;
-        background-image: url('../img/servBGPC.png');
+        background: url('../img/servBGPC.png') center no-repeat, var(--serviceBG);
 
         @media (min-resolution: 192dpi) {
-            background-image: url('../img/servBGPC@2x.png');
+            background: url('../img/servBGPC@2x.png') center no-repeat, var(--serviceBG);
         }
     }
 }
@@ -58,8 +59,20 @@
     @include tablet {
         padding: 32px 40px;
     }
+
+    @include pc {
+        flex-direction: row;
+        gap: var(--cardGap);
+        background: none;
+        padding: 0;
+    }
 }
 .services__table {
+    @include pc {
+        width: calc((100% - var(--cardGap)) / 2);
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+        padding: 30px 21px;
+    }
 }
 .services__list {
     display: flex;
@@ -86,6 +99,10 @@
 
     @include miniMobile {
         font-size: 2.92vw;
+    }
+
+    @include tablet {
+        @include font (400, 18, 30, 0.02);
     }
 }
 

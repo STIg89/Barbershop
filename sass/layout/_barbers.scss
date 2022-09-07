@@ -5,12 +5,20 @@
     @include tablet {
         max-width: 768px;
     }
+
+    @include pc {
+        max-width: 1600px;
+    }
 }
 .section {
 }
 .barbers__container{
     @include tablet {
         padding: 0 159px;
+    }
+
+    @include pc {
+        padding: 0 15px;
     }
 }
 .barbers__pre-title {
@@ -37,10 +45,19 @@
     flex-direction: column;
     justify-content: center;
     gap: 64px;
+
+    @include pc {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--cardGap);
+    }
 }
 .list {
 }
 .barbers__item {
+    @include pc {
+        width: calc((100% - (var(--cardGap) * 2)) / 3);
+    }
 }
 .barbers__card-img {
     margin-bottom: var(--cardGap);

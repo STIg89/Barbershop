@@ -18,7 +18,13 @@
 .list {
 }
 .gallery__item {
-    flex-basis: calc((100% - var(--cardGap)) / 2);
+    @include tablet {
+        flex-basis: calc((100% - var(--cardGap)) / 2);
+    }
+    
+    @include pc {
+        flex-basis: calc((100% - (var(--cardGap) * 3)) / 4);
+    }
 }
 .gallery__card-img {
     width: 100%;

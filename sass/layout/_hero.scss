@@ -1,21 +1,33 @@
-.hero {
-    margin: 0 auto;
-
-    @include mobile {
-        max-width: 480px;
-        background: var(--bgG);
-    }
-
-    @include tablet {
-        width: 768px;
-    }
-}
+// .hero {
+//     margin: 0 auto;
+// 
+//     @include mobile {
+//         max-width: 480px;
+//         // background: var(--bgG);
+//     }
+// 
+//     @include tablet {
+//         width: 768px;
+//     }
+// 
+//     @include tablet {
+//         width: 1200px;
+//     }
+// }
 
 .hero__container {
+    @include mobile {
+        padding: 0;
+    }
+
     @include tablet {
         display: flex;
         justify-content: space-between;
         padding-right: 0;
+    }
+
+    @include pc {
+        padding-right: 15px;
     }
 }
 
@@ -26,8 +38,11 @@
 
     display: flex;
     align-items: flex-end;
-
     max-width: 124px;
+
+    @include pc {
+        max-width: 100px;
+    }
 }
 .hero__soc-list {
 }
@@ -41,6 +56,10 @@
         color: var(--primaryElem);
         margin-left: 45px;
         margin-bottom: 40px;
+
+        @include pc {
+            margin-left: 35px;
+        }
     }
 }
 .list {
@@ -59,16 +78,23 @@
 .link {
 }
 .hero__content {
+    background: var(--bgG);
+    
     @include mobile {
-        @include flex (none, center);
-        flex-direction: column;
-        height: 580px;
-        max-width: 336px;
+        padding: 208px 31px 209px 31px;
+        // @include flex (none, center);
+        // flex-direction: column;
+        // height: 580px;
+        // max-width: 336px;
     }
 
     @include tablet {
-        background: var(--bgG);
-        padding: 272px 111px 237px 123px;
+        padding: 272px 111px 237px 111px;
+        flex-grow: 1;
+    }
+
+    @include pc {
+        padding: 272px 100px 208px 100px;
     }
 }
 .pre-title--color-light {
@@ -81,6 +107,10 @@
     @include miniMobile {
         font-size: 10vw;
     }
+
+    @include pc {
+        @include font (700, 72, 85, 0.05);
+    }
 }
 .hero__after-title {
     @include font (400, 16, 26, 0.02);
@@ -91,4 +121,5 @@
     }
 }
 .after-title {
+
 }

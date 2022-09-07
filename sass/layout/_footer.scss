@@ -5,15 +5,24 @@
 .footer__container {
     padding-top: var(--componentGap);
     padding-bottom: var(--componentGap);
-    // display: flex;
-    // justify-content: space-between;
-    // height: 138px;
+
+    @include tablet {
+        padding-top: 56px;
+        padding-bottom: 56px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    @include pc {
+    }
 
     p {
         @include font (600, 11, 15, 0.02);
         display: block;
         color: var(--secondaryText);
         // align-self: flex-end;
+        
     }
 }
 .footer__soc-list {
@@ -23,7 +32,10 @@
     gap: 40px;
     @include font (600, 11, 15, 0.02);
     color: var(--primaryElem);
-    margin-bottom: var(--textGap);
+
+    @include mobile {
+        margin-bottom: var(--textGap);
+    }
 
     &:before {
         content: "";

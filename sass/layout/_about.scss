@@ -21,6 +21,9 @@
 .list {
 }
 .pic-item {
+    @include pc {
+        width: calc((100% - var(--cardGap)) / 2);
+    }
 }
 .about__content {
     flex-basis: calc((100% - var(--cardGap)) / 2);
@@ -38,6 +41,11 @@
     color: var(--primaryElem);
     max-width: 306px;
     margin-bottom: var(--textGap);
+
+    @include pc {
+        @include font (700, 42, 49, 0.05);
+        max-width: 470px;
+    }
 }
 .title {
 }
@@ -46,6 +54,11 @@
     @include font;
     font-size: 16px;
     color: var(--primaryText);
+
+    @include pc {
+        @include font (400, 18, 30, 0.02);
+        max-width: 470px;
+    }
 }
 .after-title {
 }
@@ -56,6 +69,10 @@
 
     @include tablet {
         margin-bottom: auto;
+    }
+
+    @include pc {
+        max-width: 470px;
     }
 }
 .about__primary-btn {

@@ -5,6 +5,11 @@
 .benefits__container {
     display: flex;
     flex-direction: column;
+
+    @include pc {
+        flex-direction: row-reverse;
+        gap: var(--cardGap);
+    }
 }
 .benefits__content {
     @include tablet {
@@ -12,6 +17,9 @@
     }
 }
 .benefits__pre-title {
+    @include pc {
+        margin-top: 9px;
+    }
 }
 .pre-title {
 }
@@ -22,6 +30,10 @@
 
     @include miniMobile {
         font-size: 8.75vw;
+    }
+
+    @include tablet {
+        width: 450px;
     }
 }
 .title {
@@ -42,6 +54,12 @@
     @include tablet {
         width: 450px;
         margin-left: auto;
+    }
+    
+    @include pc {
+        width: calc((100% - var(--cardGap))/2);
+        margin-left: 0;
+        padding: 0 100px;
     }
 }
 .list {
