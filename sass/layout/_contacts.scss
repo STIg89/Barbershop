@@ -4,12 +4,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     }
-}
-.title {
+
+    @include pc {
+        width: calc((100% - var(--cardGap)) / 2);
+        padding-left: 100px;
+        padding-top: 130px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        }
 }
 .contacts__title {
     width: 100%;
-
     @include font (700, 42, 49, 0.05);
     text-align: center;
     color: var(--secondaryTitle);
@@ -18,7 +23,12 @@
     @include miniMobile {
         font-size: 8.75vw;
     }
+
+    @include pc {
+        text-align: start;
+        }
 }
+
 .contacts__address {
     display: flex;
     flex-direction: column;
@@ -28,7 +38,13 @@
         width: calc((100% - var(--cardGap)) / 2);
         padding-right: 30px;
         }
+
+    @include pc {
+        padding-right: 0;
+        margin-bottom: 70px;
+        }
 }
+
 .contacts__address-link {
     display: flex;
 
@@ -40,23 +56,18 @@
         font-size: 3.75vw;
     }
 }
-.link {
-}
+
 .contacts__icon {
     fill: currentColor;
     margin-right: 16px;
 }
-.icon {
-}
+
 .contacts__list {
     display: flex;
     flex-direction: column;
     gap: var(--textGap);
 }
-.list {
-}
-.contacts__item {
-}
+
 .contacts__link {
     @include font (400, 18, 30, 0.02);
     color: var(--secondaryText);
@@ -76,7 +87,12 @@
     @include tablet {
         width: calc((100% - var(--cardGap)) / 2);
     }
+
+    @include pc {
+        width: 100%;
+        }
 }
+
 .contacts__time-title {
     color: var(--secondaryTitle);
     margin-bottom: var(--textGap);
@@ -88,6 +104,7 @@
         background-color: var(--secondaryText);
     }
 }
+
 .contacts__time-text {
     @include font (400, 18, 30, 0.02);
     color: var(--secondaryText);

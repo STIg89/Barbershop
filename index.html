@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
     <title>BarberShop</title>
 </head>
@@ -103,11 +103,72 @@
                         </li>
                     </ul>
                 </div>
-                <div class="hero__content">
-                    <p class="hero__pre-title pre-title pre-title--color-light">A hair salon for men in Kyiv</p>
-                    <h1 class="hero__title title">BarberShop</h1>
-                    <p class="hero__after-title after-title">We are experts in trendy men’s haircuts. <br> We work quickly,
-                    carefully and with style.</p>
+                <div class="hero__wrapper">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                ./img/slide2.jpg 1x,
+                                ./img/slide2@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <source srcset="
+                                ./img/slide2T.jpg 1x,
+                                ./img/slide2T@2x.jpg 2x"
+                                media="(max-width: 1199px)">
+                                <source srcset="
+                                ./img/slide2PC.jpg 1x,
+                                ./img/slide2PC@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img src="./img/slide2.jpg" alt="barber">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                ./img/slide1.jpg 1x,
+                                ./img/slide1@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <source srcset="
+                                ./img/slide1T.jpg 1x,
+                                ./img/slide1T@2x.jpg 2x"
+                                media="(max-width: 1199px)">
+                                <source srcset="
+                                ./img/slide1PC.jpg 1x,
+                                ./img/slide1PC@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img src="./img/slide1.jpg" alt="barber">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="
+                                ./img/slide3.jpg 1x,
+                                ./img/slide3@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <source srcset="
+                                ./img/slide3T.jpg 1x,
+                                ./img/slide3T@2x.jpg 2x"
+                                media="(max-width: 1199px)">
+                                <source srcset="
+                                ./img/slide3PC.jpg 1x,
+                                ./img/slide3PC@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img src="./img/slide3.jpg" alt="barber">
+                            </picture>
+                        </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="button-prev">Back</div>
+                        <div class="button-next">Forward</div>
+                    </div>
+                    <div class="hero__content">
+                        <p class="hero__pre-title pre-title pre-title--color-light">A hair salon for men in Kyiv</p>
+                        <h1 class="hero__title title">BarberShop</h1>
+                        <p class="hero__after-title after-title">We are experts in trendy men’s haircuts. <br> We work quickly,
+                        carefully and with style.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -403,80 +464,80 @@
         </section>
         <section class="gallery section">
             <div class="container">
-            <p class="gallery__pre-title pre-title">
-                In Latin, "barba" means "beard"
-            </p>
-            <h2 class="visually-hidden">Gallery</h2>
-            <ul class="gallery__list list">
-                <li class="gallery__item">
-                    <picture>
-                        <source srcset="
-                        ./img/img_1.jpg 1x,
-                        ./img/img_1@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                        <source srcset="
-                        ./img/img_1T.jpg 1x,
-                        ./img/img_1T@2x.jpg 2x"
-                        media="(max-width: 1199px)">
-                        <source srcset="
-                        ./img/img_1PC.jpg 1x,
-                        ./img/img_1PC@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_1.jpg" alt="barber" width="418" >
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture>
-                        <source srcset="
-                        ./img/img_2.jpg 1x,
-                        ./img/img_2@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                        <source srcset="
-                        ./img/img_2T.jpg 1x,
-                        ./img/img_2T@2x.jpg 2x"
-                        media="(max-width: 1199px)">
-                        <source srcset="
-                        ./img/img_2PC.jpg 1x,
-                        ./img/img_2PC@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_2.jpg" alt="barber" width="418" >
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture>
-                        <source srcset="
-                        ./img/img_3.jpg 1x,
-                        ./img/img_3@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                        <source srcset="
-                        ./img/img_3T.jpg 1x,
-                        ./img/img_3T@2x.jpg 2x"
-                        media="(max-width: 1199px)">
-                        <source srcset="
-                        ./img/img_3PC.jpg 1x,
-                        ./img/img_3PC@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_3.jpg" alt="barber" width="418" >
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture>
-                        <source srcset="
-                        ./img/img_4.jpg 1x,
-                        ./img/img_4@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                        <source srcset="
-                        ./img/img_4T.jpg 1x,
-                        ./img/img_4T@2x.jpg 2x"
-                        media="(max-width: 1199px)">
-                        <source srcset="
-                        ./img/img_4PC.jpg 1x,
-                        ./img/img_4PC@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                        <img class="gallery__card-img" src="./img/img_4.jpg" alt="barber" width="418" >
-                    </picture>
-                </li>
-            </ul>
+                <p class="gallery__pre-title pre-title">
+                    In Latin, "barba" means "beard"
+                </p>
+                <h2 class="visually-hidden">Gallery</h2>
+                <ul class="gallery__list list">
+                    <li class="gallery__item">
+                        <picture>
+                            <source srcset="
+                            ./img/img_1.jpg 1x,
+                            ./img/img_1@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./img/img_1T.jpg 1x,
+                            ./img/img_1T@2x.jpg 2x"
+                            media="(max-width: 1199px)">
+                            <source srcset="
+                            ./img/img_1PC.jpg 1x,
+                            ./img/img_1PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="gallery__card-img" src="./img/img_1.jpg" alt="barber" width="418" >
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source srcset="
+                            ./img/img_2.jpg 1x,
+                            ./img/img_2@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./img/img_2T.jpg 1x,
+                            ./img/img_2T@2x.jpg 2x"
+                            media="(max-width: 1199px)">
+                            <source srcset="
+                            ./img/img_2PC.jpg 1x,
+                            ./img/img_2PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="gallery__card-img" src="./img/img_2.jpg" alt="barber" width="418" >
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source srcset="
+                            ./img/img_3.jpg 1x,
+                            ./img/img_3@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./img/img_3T.jpg 1x,
+                            ./img/img_3T@2x.jpg 2x"
+                            media="(max-width: 1199px)">
+                            <source srcset="
+                            ./img/img_3PC.jpg 1x,
+                            ./img/img_3PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="gallery__card-img" src="./img/img_3.jpg" alt="barber" width="418" >
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source srcset="
+                            ./img/img_4.jpg 1x,
+                            ./img/img_4@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./img/img_4T.jpg 1x,
+                            ./img/img_4T@2x.jpg 2x"
+                            media="(max-width: 1199px)">
+                            <source srcset="
+                            ./img/img_4PC.jpg 1x,
+                            ./img/img_4PC@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="gallery__card-img" src="./img/img_4.jpg" alt="barber" width="418" >
+                        </picture>
+                    </li>
+                </ul>
             </div>
         </section>
         <div class="contact-wrap">
@@ -570,6 +631,8 @@
             <p>&#169; Copyright 2020</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

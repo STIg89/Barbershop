@@ -1,7 +1,3 @@
-.footer {
-
-}
-
 .footer__container {
     padding-top: var(--componentGap);
     padding-bottom: var(--componentGap);
@@ -25,6 +21,7 @@
         
     }
 }
+
 .footer__soc-list {
     display: flex;
     align-items: center;
@@ -43,18 +40,4 @@
         height: 1px;
         background-color: var(--primaryElem);
     }
-}
-.soc-list {
-}
-.list {
-}
-.footer__soc-item--instagram {
-}
-.footer__soc-item {
-}
-.footer__soc-link {
-}
-.link {
-}
-.footer__soc-item--youtube {
 }

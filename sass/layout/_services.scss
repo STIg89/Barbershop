@@ -25,16 +25,7 @@
         }
     }
 }
-.section {
-}
-.container {
-}
-.services__pre-title {
-}
-.pre-title {
-}
-.pre-title--color-light {
-}
+
 .services__title {
     @include font (700, 40, 47, 0.05);
     color: var(--secondaryTitle);
@@ -43,9 +34,6 @@
     @include miniMobile {
         font-size: 8.33vw;
     }
-}
-.title {
-    
 }
 
 .services__wrap {
@@ -67,6 +55,7 @@
         padding: 0;
     }
 }
+
 .services__table {
     @include pc {
         width: calc((100% - var(--cardGap)) / 2);
@@ -74,6 +63,7 @@
         padding: 30px 21px;
     }
 }
+
 .services__list {
     display: flex;
     flex-direction: column;
@@ -91,6 +81,7 @@
     flex-grow: 1;
     margin: 0 4px 0 4px;
 }
+
 .services__text,
 .price__text {
     @include font;
@@ -106,9 +97,6 @@
     }
 }
 
-.price__item {
-    
-}
 .services__primary-btn {
     margin: 0 auto;
 }

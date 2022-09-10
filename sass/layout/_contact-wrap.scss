@@ -3,7 +3,7 @@
     background-image: url('../img/contBG.png');
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: contain;
+    background-size: 100%;
     margin: 0 auto;
     max-width: 480px;
     
@@ -14,7 +14,7 @@
     @include tablet {
         max-width: 768px;
         background-image: url('../img/contBGT.png');
-        background-size: cover;
+        background-size: 100%;
 
         @media (min-resolution: 192dpi) {
             background-image: url('../img/contBGT@2x.png');
@@ -24,8 +24,8 @@
 
     @include pc {
         max-width: 1600px;
-        // max-height: 600px;
-        // padding: 200px 0;
+        background-position: right;
+        background-size: calc((100% - var(--cardGap)) / 2) 100%;
 
         background-image: url('../img/contBGPC.png');
         // background-size: cover;
@@ -34,5 +34,13 @@
             background-image: url('../img/contBGPC@2x.png');
             // background-size: cover;
         }
+    }
+
+    .container {
+        @include pc {
+            display: flex;
+            gap: var(--cardGap);
+            }
+    
     }
 }
