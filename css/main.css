@@ -712,6 +712,10 @@ body {
   position: absolute;
   z-index: 2;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 767px) {
   .button-prev,
